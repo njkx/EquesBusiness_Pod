@@ -1,0 +1,22 @@
+{
+  "name": "EquesBusiness_Pod",
+  "version": "0.1.0",
+  "summary": "A short description of EquesBusiness_Pod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/weichengwu/EquesBusiness_Pod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "weichengwu": "wuvcen@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/weichengwu/EquesBusiness_Pod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "EquesBusiness_Pod/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - EquesBusiness_Pod (0.1.0)
+
+DEPENDENCIES:
+  - EquesBusiness_Pod (from `../`)
+
+EXTERNAL SOURCES:
+  EquesBusiness_Pod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EquesBusiness_Pod: b6a681639d792a130168361ba6af2d1178ceca75
+
+PODFILE CHECKSUM: 04b121942b9095be8b6594b33ca276ab286719ed
+
+COCOAPODS: 1.5.2

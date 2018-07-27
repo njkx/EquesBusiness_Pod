@@ -27,16 +27,29 @@ TODO: Add long description of the pod here.
   s.author           = { 'weichengwu' => 'wuvcen@gmail.com' }
   s.source           = { :git => 'https://github.com/weichengwu/EquesBusiness_Pod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'EquesBusiness_Pod/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'EquesBusiness_Pod' => ['EquesBusiness_Pod/Assets/*.png']
-  # }
+  s.static_framework = true
+  s.ios.deployment_target = '8.0'
+  
+  s.source_files = [
+  'EquesBusiness_Pod/Classes/**/*',
+  'EquesBusiness_Pod/Frameworks/EquesBusiness.framework/Headers/YKBusinessFramework.h'
+  ]
+  
+  s.vendored_frameworks = 'EquesBusiness_Pod/Frameworks/EquesBusiness.framework'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.libraries = [
+  'z',
+  'icucore',
+  'iconv',
+  'bz2',
+  ]
+
+  s.frameworks = [
+  'UIKit',
+  'SystemConfiguration',
+  'MobileCoreServices',
+  'AudioToolbox',
+  'AVFoundation',
+  ]
 end
